@@ -14,10 +14,12 @@ This code requires Python 3.8+ and Poetry for dependency management. Install dep
 poetry install
 
 -Activate the Poetry environment for usage:
+
 poetry shell
 
 -Usage
 To train the model on the blood_cell_videos dataset:
+
 python training/trainer.py --data-dir /path/to/blood_cells --epochs 100 --lr 0.001
 
 This will configure the neural architecture, leverage unlabeled videos for self-supervision, and fit the model parameters on the labeled dataset.
